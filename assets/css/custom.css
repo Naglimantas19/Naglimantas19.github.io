@@ -1,0 +1,60 @@
+/* 9 laboratorinis darbas – individualus CV stilius */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+:root { --cv-accent:#32c7bb; --cv-accent-dark:#087b76; --cv-surface:#142a34; --cv-line:#31525b; }
+body { font-family:'Manrope',Arial,sans-serif !important; font-size:16px; line-height:1.8; letter-spacing:.015em; }
+h1,h2,h3,h4,h5,h6 { font-family:'Outfit',Arial,sans-serif !important; letter-spacing:-.025em; line-height:1.23; }
+h1 { font-size:clamp(2.6rem,5vw,4.5rem); font-weight:800; }
+h2 { font-size:clamp(2rem,3vw,2.8rem); font-weight:700; }
+h3 { font-size:1.45rem; font-weight:700; }
+h4,h5,h6 { font-weight:600; }
+p { font-size:1.02rem; line-height:1.9; margin-bottom:1.2rem; }
+.section-title h2 { display:inline-block; padding-bottom:14px; border-bottom:4px solid var(--cv-accent); }
+.section-title p { max-width:740px; margin:18px auto 0; }
+a { text-underline-offset:4px; transition:color .2s ease, opacity .2s ease; }
+a:hover { color:var(--cv-accent) !important; }
+.btn,.btn-primary,.btn-outline,.btn-ghost,button,input[type=submit] { border-radius:14px !important; padding:12px 23px !important; font-weight:700 !important; letter-spacing:.025em; transition:transform .2s ease,box-shadow .2s ease,background .2s ease !important; }
+.btn:hover,.btn-primary:hover,.btn-outline:hover,.btn-ghost:hover,button:hover,input[type=submit]:hover { transform:translateY(-3px); box-shadow:0 10px 25px rgba(0,0,0,.2); }
+.btn-primary { background:var(--cv-accent-dark) !important; border-color:var(--cv-accent-dark) !important; color:white !important; }
+.btn-primary:hover { background:#075b57 !important; color:white !important; }
+.navmenu a { font-weight:700 !important; letter-spacing:.03em; border-radius:9px; }
+.navmenu a:hover,.navmenu .active { color:var(--cv-accent) !important; }
+.about .progress { height:12px !important; border-radius:20px !important; overflow:hidden; background:#dce9e9 !important; }
+.about .progress-bar { background:linear-gradient(90deg,#087b76,#32c7bb) !important; border-radius:20px; }
+.about .skill-item,.about .skills-content { margin-bottom:17px; }
+/* 2-4 punktas: nauji atstumai ir korteliu apvadai */
+.about .container,.resume .container,.portfolio .container,.services .container { padding-left:clamp(18px,3vw,38px); padding-right:clamp(18px,3vw,38px); }
+.section { padding-top:75px !important; padding-bottom:75px !important; }
+.about .row,.resume .row,.portfolio .row { row-gap:32px; }
+.services .service-item,.portfolio .portfolio-card,.resume .resume-item { border:1px solid var(--cv-line) !important; border-radius:18px !important; padding:24px !important; box-shadow:0 9px 25px rgba(0,0,0,.13) !important; transition:transform .2s ease,box-shadow .2s ease; }
+.services .service-item:hover,.portfolio .portfolio-card:hover { transform:translateY(-4px); box-shadow:0 15px 35px rgba(0,0,0,.23) !important; }
+/* 9 laboratorinio papildoma dalis: sarasai */
+.cv-lab-lists { display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px; }
+.cv-list-card { background:var(--cv-surface);border:1px solid var(--cv-line);border-radius:18px;padding:22px; }
+.cv-list-card h3 { color:#fff; }
+.cv-list-card ul { list-style-type:square; padding-left:25px; }
+.cv-list-card ul li::marker { color:#5fe4d7; }
+.cv-list-card ol { list-style-type:decimal; padding-left:25px; }
+.cv-list-card ol li::marker { color:#5fe4d7; font-weight:800; }
+.cv-list-card li { margin:9px 0; padding-left:5px; }
+.cv-list-card ul ul { list-style-type:circle; margin:8px 0 10px; padding-left:25px; border-left:2px solid #5fe4d7; }
+/* 9 laboratorinio papildoma dalis: lentele */
+.cv-table-wrap { overflow-x:auto;border-radius:16px;border:1px solid var(--cv-line); }
+.cv-services-table { width:100%;border-collapse:collapse;min-width:510px; }
+.cv-services-table th,.cv-services-table td { padding:16px 20px !important;text-align:center;border-bottom:1px solid var(--cv-line); }
+.cv-services-table thead th { background:#087b76 !important;color:#fff !important;text-transform:uppercase;letter-spacing:.07em; }
+.cv-services-table tbody tr:nth-child(odd) { background:#16323c; }
+.cv-services-table tbody tr:nth-child(even) { background:#213f49; }
+.cv-services-table tbody tr:hover { background:#315c62 !important; }
+.cv-services-table tbody td { color:#f1f8f8; }
+.cv-media { display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:28px; }
+.cv-media-card { background:var(--cv-surface);padding:22px;border:1px solid var(--cv-line);border-radius:18px; }
+.cv-media-card video,.cv-media-card audio { display:block;max-width:100%;width:100%;margin-top:12px; }
+@media(max-width:600px){.section{padding-top:48px !important;padding-bottom:48px !important}.cv-media{grid-template-columns:1fr}.cv-services-table th,.cv-services-table td{padding:12px !important}}
+
+/* 9 laboratorinis: paspausto mygtuko (:active) busena */
+.btn:active, .btn-primary:active, .btn-outline:active, .btn-ghost:active,
+button:active, input[type="submit"]:active {
+  transform: translateY(1px) scale(.97) !important;
+  box-shadow: 0 2px 7px rgba(0,0,0,.22) !important;
+  filter: brightness(.88);
+}
