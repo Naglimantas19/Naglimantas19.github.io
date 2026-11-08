@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html lang="lt">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mano darbai – Naglis Šeštakauskas</title>
+<title>Portfolio - FolioOne Bootstrap Template</title>
 <meta content="" name="description"/>
 <meta content="" name="keywords"/>
 <!-- Favicons -->
@@ -22,6 +22,7 @@
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet"/>
+<link href="assets/css/custom.css" rel="stylesheet"/>
 <!-- =======================================================
   * Template Name: FolioOne
   * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
@@ -43,7 +44,7 @@
 <li><a href="about.html">Apie mane</a></li>
 <li><a href="resume.html">Mano CV</a></li>
 <li><a href="services.html">Įgūdžiai</a></li>
-<li><a class="active" href="portfolio.html">Mano darbai</a></li>
+<li><a class="active" href="portfolio.html">Portfolio</a></li>
 <li><a href="contact.html">Kontaktai</a></li>
 </ul>
 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -58,12 +59,85 @@
 </header>
 <main class="main">
 <!-- Portfolio Section -->
-<section class="portfolio section" id="portfolio"><div class="container section-title" data-aos="fade-up"><h2>Mano darbai</h2><p>Mano MATLAB laboratorinių darbų grafikai ir trumpi jų aprašymai.</p></div><div class="container"><div class="row gy-4" id="matlab-darbai"><div class="col-lg-4 col-md-6"><div class="portfolio-card"><div class="portfolio-img"><img alt="Sinuso funkcijos f(x) = sin(2πx) grafikas" class="img-fluid" src="assets/img/portfolio/matlab-sinusoide.png"/></div><div class="portfolio-info"><h4>Sinuso funkcijos grafikas</h4><p>MATLAB aplinkoje pavaizduota funkcija f(x) = sin(2πx), kai x nuo 0 iki 1.</p><div class="portfolio-tags"><span>MATLAB</span><span>Laboratorinis darbas</span></div></div></div></div><div class="col-lg-4 col-md-6"><div class="portfolio-card"><div class="portfolio-img"><img alt="Pradinio ir filtruoto signalų palyginimas bei reikšmės virš U1" class="img-fluid" src="assets/img/portfolio/matlab-signalai.png"/></div><div class="portfolio-info"><h4>Signalų filtravimas</h4><p>Pavaizduoti pradinis ir filtruotas signalai, U1 ir U2 ribos bei signalo reikšmės virš U1.</p><div class="portfolio-tags"><span>MATLAB</span><span>Laboratorinis darbas</span></div></div></div></div><div class="col-lg-4 col-md-6"><div class="portfolio-card"><div class="portfolio-img"><img alt="Trimatės funkcijos paviršiaus grafikas MATLAB aplinkoje" class="img-fluid" src="assets/img/portfolio/matlab-3d-pavirsius.png"/></div><div class="portfolio-info"><h4>Trimatės funkcijos grafikas</h4><p>MATLAB sukurtas trimatis funkcijos f(x,y) = sin(|x+y|/20) · e^(−|x+y|) paviršiaus grafikas.</p><div class="portfolio-tags"><span>MATLAB</span><span>Laboratorinis darbas</span></div></div></div></div></div></div></section><!-- /Portfolio Section -->
+<section class="portfolio section" id="portfolio">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+<h2>Portfolio</h2>
+<p>Čia pateikiu studijų metu sukurtus MATLAB grafikus ir kitus mokomuosius darbus.</p>
+</div><!-- End Section Title -->
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+<div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+<li class="filter-active" data-filter="*">All</li>
+
+
+
+
+<li data-filter=".filter-matlab">MATLAB</li></ul><!-- End Portfolio Filters -->
+<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-matlab">
+<div class="portfolio-card">
+<div class="portfolio-img">
+<img alt="MATLAB – sinusoidės grafikas" class="img-fluid" src="assets/img/portfolio/matlab-sinusoide.png"/>
+<div class="portfolio-overlay">
+<a class="glightbox portfolio-lightbox" href="assets/img/portfolio/matlab-sinusoide.png"><i class="bi bi-plus"></i></a>
+<a class="portfolio-details-link" href="#"><i class="bi bi-link"></i></a>
+</div>
+</div>
+<div class="portfolio-info">
+<h4>MATLAB – sinusoidės grafikas</h4>
+<p>Sinusoidės grafikas</p>
+
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-matlab">
+<div class="portfolio-card">
+<div class="portfolio-img">
+<img alt="MATLAB – signalų grafikai" class="img-fluid" src="assets/img/portfolio/matlab-signalai.png"/>
+<div class="portfolio-overlay">
+<a class="glightbox portfolio-lightbox" href="assets/img/portfolio/matlab-signalai.png"><i class="bi bi-plus"></i></a>
+<a class="portfolio-details-link" href="#"><i class="bi bi-link"></i></a>
+</div>
+</div>
+<div class="portfolio-info">
+<h4>MATLAB – signalų grafikai</h4>
+<p>Signalų grafikai</p>
+
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-matlab">
+<div class="portfolio-card">
+<div class="portfolio-img">
+<img alt="MATLAB – 3D paviršius" class="img-fluid" src="assets/img/portfolio/matlab-3d-pavirsius.png"/>
+<div class="portfolio-overlay">
+<a class="glightbox portfolio-lightbox" href="assets/img/portfolio/matlab-3d-pavirsius.png"><i class="bi bi-plus"></i></a>
+<a class="portfolio-details-link" href="#"><i class="bi bi-link"></i></a>
+</div>
+</div>
+<div class="portfolio-info">
+<h4>MATLAB – 3D paviršius</h4>
+<p>3D paviršiaus grafikas</p>
+
+</div>
+</div>
+</div>
+
+
+
+</div><!-- End Portfolio Items Container -->
+</div>
+<div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+<a class="btn btn-primary" href="#portfolio">View All Case Studies</a>
+</div>
+</div>
+</section><!-- /Portfolio Section -->
 </main>
 <footer class="footer" id="footer">
 <div class="container">
 <div class="copyright text-center">
-<p>© <span>Copyright</span> <strong class="px-1 sitename">Naglis Šeštakauskas</strong> <span>All Rights Reserved<br/></span></p>
+<p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br/></span></p>
 </div>
 <div class="social-links d-flex justify-content-center">
 <a href=""><i class="bi bi-twitter-x"></i></a>
