@@ -1,29 +1,14 @@
-
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-
 :root { 
-  --background-color: #101a20; 
-  --default-color: #e7f2f7; 
-  --heading-color: #ffffff; 
-  --accent-color: #1387c1; 
-  --surface-color: #141f26; 
-  --contrast-color: #ffffff; 
-
+  --background-color: #101a20; --default-color: #e7f2f7; --heading-color: #ffffff; --accent-color: #1387c1; --surface-color: #141f26; --contrast-color: #ffffff; }
 
 :root {
-  --nav-color: #ffffff;  
-  --nav-hover-color: #1387c1;
-  --nav-mobile-background-color: #213642; 
-  --nav-dropdown-background-color: #051117; 
-  --nav-dropdown-color: #e7f2f7; 
-  --nav-dropdown-hover-color: #1387c1;
-
-
+  --nav-color: #ffffff;  --nav-hover-color: #1387c1; --nav-mobile-background-color: #213642; --nav-dropdown-background-color: #051117; --nav-dropdown-color: #e7f2f7; --nav-dropdown-hover-color: #1387c1; }
 
 .light-background {
   --background-color: #142027;
@@ -182,7 +167,6 @@ h6 {
 .scrolled .header {
   --background-color: rgba(16, 26, 32, 0.9);
 }
-
 
 @media (min-width: 1200px) {
   .navmenu {
@@ -2765,5 +2749,4 @@ section,
 }
 
 .starter-section {
-  /* Add your styles here */
-}
+  }
