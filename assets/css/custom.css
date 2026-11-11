@@ -21,13 +21,13 @@ a:hover { color:var(--cv-accent) !important; }
 .about .progress { height:12px !important; border-radius:20px !important; overflow:hidden; background:#dce9e9 !important; }
 .about .progress-bar { background:linear-gradient(90deg,#087b76,#32c7bb) !important; border-radius:20px; }
 .about .skill-item,.about .skills-content { margin-bottom:17px; }
-/* 2-4 punktas: nauji atstumai ir korteliu apvadai */
+
 .about .container,.resume .container,.portfolio .container,.services .container { padding-left:clamp(18px,3vw,38px); padding-right:clamp(18px,3vw,38px); }
 .section { padding-top:75px !important; padding-bottom:75px !important; }
 .about .row,.resume .row,.portfolio .row { row-gap:32px; }
 .services .service-item,.portfolio .portfolio-card,.resume .resume-item { border:1px solid var(--cv-line) !important; border-radius:18px !important; padding:24px !important; box-shadow:0 9px 25px rgba(0,0,0,.13) !important; transition:transform .2s ease,box-shadow .2s ease; }
 .services .service-item:hover,.portfolio .portfolio-card:hover { transform:translateY(-4px); box-shadow:0 15px 35px rgba(0,0,0,.23) !important; }
-/* 9 laboratorinio papildoma dalis: sarasai */
+
 .cv-lab-lists { display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px; }
 .cv-list-card { background:var(--cv-surface);border:1px solid var(--cv-line);border-radius:18px;padding:22px; }
 .cv-list-card h3 { color:#fff; }
@@ -37,7 +37,7 @@ a:hover { color:var(--cv-accent) !important; }
 .cv-list-card ol li::marker { color:#5fe4d7; font-weight:800; }
 .cv-list-card li { margin:9px 0; padding-left:5px; }
 .cv-list-card ul ul { list-style-type:circle; margin:8px 0 10px; padding-left:25px; border-left:2px solid #5fe4d7; }
-/* 9 laboratorinio papildoma dalis: lentele */
+
 .cv-table-wrap { overflow-x:auto;border-radius:16px;border:1px solid var(--cv-line); }
 .cv-services-table { width:100%;border-collapse:collapse;min-width:510px; }
 .cv-services-table th,.cv-services-table td { padding:16px 20px !important;text-align:center;border-bottom:1px solid var(--cv-line); }
