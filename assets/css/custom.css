@@ -51,7 +51,7 @@ a:hover { color:var(--cv-accent) !important; }
 .cv-media-card video,.cv-media-card audio { display:block;max-width:100%;width:100%;margin-top:12px; }
 @media(max-width:600px){.section{padding-top:48px !important;padding-bottom:48px !important}.cv-media{grid-template-columns:1fr}.cv-services-table th,.cv-services-table td{padding:12px !important}}
 
-/* 9 laboratorinis: paspausto mygtuko (:active) busena */
+
 .btn:active, .btn-primary:active, .btn-outline:active, .btn-ghost:active,
 button:active, input[type="submit"]:active {
   transform: translateY(1px) scale(.97) !important;
@@ -59,10 +59,6 @@ button:active, input[type="submit"]:active {
   filter: brightness(.88);
 }
 
-/* =============================================================
-   10 laboratorinis darbas – CSS animacijos ir grafikos objektai
-   ============================================================= */
-/* 1. Dvi pagrindines animacijos: po 5 busenas, keiciamos >=2 savybes */
 @keyframes cvFloat {
   0%   { transform:translateY(0) rotate(0deg); opacity:.8; }
   25%  { transform:translateY(-11px) rotate(5deg); opacity:1; }
@@ -77,7 +73,7 @@ button:active, input[type="submit"]:active {
   75%  { transform:rotate(270deg) scale(1); opacity:1; }
   100% { transform:rotate(360deg) scale(.88); opacity:.7; }
 }
-/* 2. CSS-only ikrovimo indikatorius Paslaugu skiltyje */
+
 .cv-loading-demo { display:flex; align-items:center; justify-content:center; gap:18px;
   max-width:460px; margin:34px auto 0; padding:17px 23px;
   border:1px solid rgba(255,255,255,.32); border-radius:20px;
@@ -86,7 +82,7 @@ button:active, input[type="submit"]:active {
 .cv-loader { width:38px; height:38px; flex:none; border-radius:50%;
   border:4px solid rgba(255,255,255,.3); border-top-color:#66f1e2;
   animation:cvSpinScale 2.6s linear infinite; }
-/* 3. CSS pseudo-elementai be papildomu HTML elementu */
+
 .services .service-item { position:relative; isolation:isolate; overflow:hidden; }
 .services .service-item::before { content:""; position:absolute; right:12px; top:12px;
   width:24px; height:24px; border:3px solid #53dfd0; border-radius:50%;
@@ -95,7 +91,7 @@ button:active, input[type="submit"]:active {
   width:9px; height:9px; background:#65f2df; border-radius:50%;
   pointer-events:none; animation:cvFloat 4s ease-in-out infinite; }
 .services .service-item h3 { padding-right:34px; }
-/* Papildoma 1: animuotas gradientinis Paslaugu sekcijos fonas */
+
 @keyframes cvGradientFlow {
   0% { background-position:0% 50%; }
   50% { background-position:100% 50%; }
@@ -110,7 +106,7 @@ button:active, input[type="submit"]:active {
 .services-page #services .service-item { background:rgba(8,34,44,.87) !important; color:#f7ffff !important; }
 .services-page #services .service-item h3,
 .services-page #services .service-item p { color:#f7ffff !important; }
-/* Papildoma 2: dvi skirtingos CSS figuros Apie skiltyje */
+
 .cv-css-figures { display:flex; align-items:center; gap:24px; flex-wrap:wrap;
   margin:22px 0 12px; padding:12px 0; }
 .cv-css-circle { width:66px; height:66px; border:6px solid #21a9a2;
@@ -122,7 +118,7 @@ button:active, input[type="submit"]:active {
   filter:drop-shadow(0 5px 7px rgba(0,0,0,.18));
   animation:cvFloat 4.5s ease-in-out infinite; }
 .cv-figures-label { font-size:.88rem; font-weight:700; opacity:.9; }
-/* 4. Animacijos neuzstoja turinio; prieinamumas ir mazi ekranai */
+
 @media(max-width:600px) {
   .cv-loading-demo { max-width:100%; padding:13px 15px; }
   .cv-css-figures { gap:16px; }
