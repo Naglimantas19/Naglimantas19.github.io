@@ -1,7 +1,9 @@
 
+
 (function() {
   "use strict";
 
+  
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -12,6 +14,7 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
+  
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function mobileNavToogle() {
@@ -23,6 +26,7 @@
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
   }
 
+  
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.mobile-nav-active')) {
@@ -32,6 +36,7 @@
 
   });
 
+  
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
       e.preventDefault();
@@ -41,6 +46,7 @@
     });
   });
 
+  
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -48,6 +54,7 @@
     });
   }
 
+  
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -66,6 +73,7 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
+  
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -76,6 +84,7 @@
   }
   window.addEventListener('load', aosInit);
 
+  
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute('data-typed-items');
@@ -89,6 +98,7 @@
     });
   }
 
+  
   let skillsAnimation = document.querySelectorAll('.skills-animation');
   skillsAnimation.forEach((item) => {
     new Waypoint({
@@ -103,8 +113,10 @@
     });
   });
 
+  
   new PureCounter();
 
+  
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -121,6 +133,7 @@
 
   window.addEventListener("load", initSwiper);
 
+  
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
@@ -151,9 +164,7 @@
 
   });
 
-  /**
-   * Initiate glightbox
-   */
+  
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
