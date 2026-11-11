@@ -154,22 +154,12 @@ var Detector = function () {
 
 var detect = new Detector();
 
-/**
- * Adds multiple classes on node
- * @param {DOMNode} node
- * @param {array}  classes
- */
 var addClasses = function addClasses(node, classes) {
   return classes && classes.forEach(function (className) {
     return node.classList.add(className);
   });
 };
 
-/**
- * Removes multiple classes from node
- * @param {DOMNode} node
- * @param {array}  classes
- */
 var removeClasses = function removeClasses(node, classes) {
   return classes && classes.forEach(function (className) {
     return node.classList.remove(className);
@@ -191,11 +181,6 @@ var fireEvent = function fireEvent(eventName, data) {
   return document.dispatchEvent(customEvent);
 };
 
-/**
- * Set or remove aos-animate class
- * @param {node} el         element
- * @param {int}  top        scrolled distance
- */
 var applyClasses = function applyClasses(el, top) {
   var options = el.options,
       position = el.position,
@@ -238,25 +223,12 @@ var applyClasses = function applyClasses(el, top) {
   }
 };
 
-/**
- * Scroll logic - add or remove 'aos-animate' class on scroll
- *
- * @param  {array} $elements         array of elements nodes
- * @return {void}
- */
 var handleScroll = function handleScroll($elements) {
   return $elements.forEach(function (el, i) {
     return applyClasses(el, window.pageYOffset);
   });
 };
 
-/**
- * Get offset of DOM element
- * like there were no transforms applied on it
- *
- * @param  {Node} el [DOM element]
- * @return {Object} [top and left offset]
- */
 var offset = function offset(el) {
   var _x = 0;
   var _y = 0;
@@ -273,15 +245,6 @@ var offset = function offset(el) {
   };
 };
 
-/**
- * Get inline option with a fallback.
- *
- * @param  {Node} el [Dom element]
- * @param  {String} key [Option key]
- * @param  {String} fallback [Default (fallback) value]
- * @return {Mixed} [Option set with inline attributes or fallback value if not set]
- */
-
 var getInlineOption = (function (el, key, fallback) {
   var attr = el.getAttribute('data-aos-' + key);
 
@@ -295,16 +258,6 @@ var getInlineOption = (function (el, key, fallback) {
 
   return attr || fallback;
 });
-
-/**
- * Calculate offset
- * basing on element's settings like:
- * - anchor
- * - offset
- *
- * @param  {Node} el [Dom element]
- * @return {Integer} [Final offset that will be used to trigger animation in good position]
- */
 
 var getPositionIn = function getPositionIn(el, defaultOffset, defaultAnchorPlacement) {
   var windowHeight = window.innerHeight;
@@ -401,11 +354,6 @@ var prepare = function prepare($elements, options) {
   return $elements;
 };
 
-/**
- * Generate initial array with elements as objects
- * This array will be extended later with elements attributes values
- * like 'position'
- */
 var elements = (function () {
   var elements = document.querySelectorAll('[data-aos]');
   return Array.prototype.map.call(elements, function (node) {
@@ -413,22 +361,9 @@ var elements = (function () {
   });
 });
 
-/**
- * *******************************************************
- * AOS (Animate on scroll) - wowjs alternative
- * made to animate elements on scroll in both directions
- * *******************************************************
- */
-
-/**
- * Private variables
- */
 var $aosElements = [];
 var initialized = false;
 
-/**
- * Default options
- */
 var options = {
   offset: 120,
   delay: 0,
